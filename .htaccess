@@ -1,0 +1,28 @@
+#Cache
+
+<FilesMatch "\.(html|htm|php|css|js|woff|png|jpg)$">
+#Header set Cache-Control "max-age=604800, private, proxy-revalidate"
+</FilesMatch>
+
+#normas rewrite
+
+#Options +FollowSymLinks
+RewriteEngine On
+
+#Foce Non-WWW
+
+RewriteCond %{HTTP_HOST} ^www\.mireiafacal\.com [NC]
+RewriteRule (.*) http://mireiafacal.com/$1 [L,R=301]
+
+#REdirección www
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.mireiafacal.com [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/$1 [L,R=301]
+
+#Redireccion 404
+
+#Error 404:
+
+ErrorDocument 404 /index.html
+

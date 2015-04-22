@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /font-awesome/
+Disallow: /css/
+Disallow: /less/
+Disallow: /fonts/
+
+Disallow: /font-awesome
+Disallow: /css
+Disallow: /less
+Disallow: /fonts
