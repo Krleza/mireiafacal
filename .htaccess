@@ -9,16 +9,19 @@
 #Options +FollowSymLinks
 RewriteEngine On
 
-#Foce Non-WWW
 
-RewriteCond %{HTTP_HOST} ^www\.mireiafacal\.com [NC]
-RewriteRule (.*) http://mireiafacal.com/$1 [L,R=301]
+#Redirección www
 
-#REdirección www
-
+# mireia Facal.com
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.mireiafacal.com [NC]
 RewriteRule ^(.*)$ http://mireiafacal.com/$1 [L,R=301]
+
+# mireiafacal.es
+
+RewriteCond %{HTTP_HOST} ^www.mireiafacal.es [NC]
+RewriteRule ^(.*)$ http://mireiafacal.es/$1 [L,R=301]
+
 
 #Redireccion 404
 
