@@ -12,13 +12,35 @@ RewriteEngine On
 
 #Redirección www
 
-# mireia Facal.com
-RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.mireiafacal.com [NC]
-RewriteCond %{HTTP_HOST} ^www.mireiafacal.es [NC]
-RewriteCond %{HTTP_HOST} ^mireiafacal.es [NC]
-
 RewriteRule ^(.*)$ http://mireiafacal.com/$1 [L,R=301]
+
+#Redirecciones Dominios
+
+RewriteCond %{HTTP_HOST} ^www.mireiafacal.es$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^mireiafacal.es$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.gyrotonic-coruna.com$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^gyrotonic-coruna.com$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.xn--gyrotonic-corua-crb.com$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^xn--gyrotonic-corua-crb.com$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.gyrotonic-coruna.es$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^gyrotonic-coruna.es$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.xn--gyrotonic-corua-crb.es$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^xn--gyrotonic-corua-crb.es$ [NC]
+RewriteRule ^(.*)$ http://mireiafacal.com/ [R=301,L]
 
 
 
