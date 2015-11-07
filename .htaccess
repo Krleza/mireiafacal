@@ -15,7 +15,13 @@ RewriteEngine On
 # mireia Facal.com
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.mireiafacal.com [NC]
+RewriteCond %{HTTP_HOST} ^www.mireiafacal.es [NC]
+RewriteCond %{HTTP_HOST} ^mireiafacal.es [NC]
+
 RewriteRule ^(.*)$ http://mireiafacal.com/$1 [L,R=301]
+
+
+
 
 #Redireccion 404
 
