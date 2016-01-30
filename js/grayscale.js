@@ -169,7 +169,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(43.33753, -8.3754936);
+    var myLatLng = new google.maps.LatLng(43.3705718, -8.4027805);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
